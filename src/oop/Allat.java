@@ -16,6 +16,12 @@ public class Allat {
         return "Sertés: " + sertes + " Kecske: " + kecske + " Juh: " + juh;
     }
 
+    public boolean egyenlo(Allat masik) {
+        return this.sertes == masik.sertes
+                && this.kecske == masik.kecske
+                && this.juh == masik.juh;
+    }
+
     public static void allatDarab() {
         double arSertes = 3.5;
         double arKecske = 0.5;
@@ -30,6 +36,7 @@ public class Allat {
                     dbOssz++;
                     if (x + y + z == 100 && (arSertes * x + arKecske * y + arJuh * z) == 100) {
                         dbJo++;
+                        System.out.println("Sertés: " + x + " Kecske: " + y + " Juh: " + z);
                     }
                 }
             }
