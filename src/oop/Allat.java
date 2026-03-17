@@ -30,8 +30,6 @@ public class Allat {
                     dbOssz++;
                     if (x + y + z == 100 && (arSertes * x + arKecske * y + arJuh * z) == 100) {
                         dbJo++;
-                        Allat allat = new Allat(x, y, z);
-                        System.out.println(allat.allapot());
                     }
                 }
             }
